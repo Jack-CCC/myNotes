@@ -1,0 +1,33 @@
+==标签==
+标签与commit挂钩,与分支无关
+1.查看所有标签(显示的标签按字母顺序排列)
+$ git tag
+
+2.查看特定标签信息
+$ git show <tagName>
+
+3.制作标签
+>>>创建一个带有说明的标签
+$ git tag -a <tagName> -m "注释" <commitId>
+>>>制作一个标签
+$ git tag <tagName> <commitId>
+①省略commitId默认标签打在最新提交上
+
+4.删除标签
+$ git tag -d <tagName>
+
+5.推送标签到远程需要显示操作
+$ git push <远程库名> <tagName>
+一次性推送全部标签
+$ git push <远程库名> --tags
+
+6.删除远程标签
+①先从本地删除
+$ git tag -d <tagName>
+②从远程删除
+$ git push <远程库名> :refs/tags/<tagName>
+
+
+
+
+
