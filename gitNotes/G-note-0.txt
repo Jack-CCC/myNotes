@@ -123,3 +123,4 @@ $ git push 约定的远程库名 master
 (注意，克隆完成后需要进入克隆库再操作，否则当前目录是克隆库的上一级)
 $ git clone git@github.com:GitHub账户名/要克隆的远程库.git
 
+>>>$ git remote rename 远程库别名 远程库新别名
