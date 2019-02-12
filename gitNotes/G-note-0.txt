@@ -124,3 +124,4 @@ $ git push 约定的远程库名 master
 $ git clone git@github.com:GitHub账户名/要克隆的远程库.git
 
 >>>$ git remote rename 远程库别名 远程库新别名
+>>>$ git remote rm <远程库别名>    ==== 删除本地库和该远程库的关联

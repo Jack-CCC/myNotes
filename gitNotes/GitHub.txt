@@ -1,0 +1,5 @@
+GitHub的使用
+1.在GitHub上可以Fork开源仓库到自己的远程库
+(Fork意为河流分支)
+2.属于自己的Fork仓库将有权限修改
+3.可以通过pull request推送自己的代码给对方
