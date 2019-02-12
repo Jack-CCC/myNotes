@@ -1,0 +1,13 @@
+=====================忽略特殊文件===========================
+有些文件不需要提交到Git，但是git status每次都会提示到，所有需要编写一个.gitignore文件来让git识别，这样的.gitignore可以在https://github.com/github/gitignore这个网页找到。
+自定义一个也可以，通常是这样：
+①#来标注注释
+②将文件名直接写到.gitignore文件里(.gitignore是文本编辑另存为生成)
+③可以用*.class来指代所有的.class文件(类推其他)
+最后还需要将.gitignore文件提交给git,且可以对其做版本管理
+
+1.强制添加某被忽略的文件到git
+$ git add -f <fileName>
+
+2.检查是哪一行的.gitignore文件的规则忽略了这个文件
+$ git check-ignore -v <fileName>
