@@ -1,5 +1,28 @@
-GitHub的使用
+===============GitHub的使用======================
 1.在GitHub上可以Fork开源仓库到自己的远程库
 (Fork意为河流分支)
 2.属于自己的Fork仓库将有权限修改
 3.可以通过pull request推送自己的代码给对方
+
+
+===============码云的使用========================
+码云是国内的Git托管服务
+1.将本地库与码云的库关联
+$ git remote add <originName> git@gitee.com:<userName>/<远程库名>.git
+如果出错，可能是本地库已经有了同名的关联,可以用$ git remote -v查询
+$ git remote rm <orginName>删除远程关联
+
+2.可以给本地库的远程关联取不同的名字，这样，本地库可以关联到不同的远程库
+$ git remote add github git@github.com:michaelliao/learngit.git
+$ git remote add gitee git@gitee.com:liaoxuefeng/learngit.git
+$ git remote -v
+gitee    git@gitee.com:liaoxuefeng/learngit.git (fetch)
+gitee    git@gitee.com:liaoxuefeng/learngit.git (push)
+github    git@github.com:michaelliao/learngit.git (fetch)
+github    git@github.com:michaelliao/learngit.git (push)
+$ git push github master         >>>推送到GitHub
+$ git push gitee master          >>>推送到码云
+这样可以实现双向同步
+
+
+
