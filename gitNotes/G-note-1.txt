@@ -119,3 +119,13 @@ $ git branch --set-upstream <本地对应的分支> <远程库别名>/<远程库的分支>
 $ git rebase   
 
 
+15.从远程拉取本地还没有的数据(必须手动合并它到当前工作，才能生效)
+$ git fetch <remoteName>
+$ git merge <remoteName>/<远程要合并的分支>
+
+16.自动抓取远程分支并尝试合并到当前分支
+$ git pull
+
+17.删除远程的分支
+$ git push <remoteName> --delete <要删除的分支名>
+
