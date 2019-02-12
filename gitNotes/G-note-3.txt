@@ -11,3 +11,10 @@ $ git add -f <fileName>
 
 2.检查是哪一行的.gitignore文件的规则忽略了这个文件
 $ git check-ignore -v <fileName>
+
+
+========================为命令取别名=========================
+$ git config --global alias.<newName> <orderName>
+
+1.Git仓库的配置文件都放在它的.git/config,修改的别名都在[alias]后面，删除别名时删除对应行即可。
+如果加上global，修改的是当前用户的git配置，这个文件在用户主目录下，名为.gitconfig
