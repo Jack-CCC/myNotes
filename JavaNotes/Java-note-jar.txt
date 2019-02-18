@@ -1,0 +1,2 @@
+1.IDEA中打包项目为jar，可以使用maven工具的install下的install:install,会在项目的target下产生一个jar包
+ 在cmd中使用java -jar <jar包的绝对地址>  可以运行该jar包
